@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUGAS PEMROGRAMAN I</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #f4f4f4;
+            padding: 15px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            border: 3px solid black;
+            padding: 40px 30px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            font-size: 26px;
+            margin-bottom: 35px;
+            border-bottom: 3px solid black;
+            padding-bottom: 15px;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px 0;
+            font-size: 17px;
+        }
+        .label {
+            font-weight: bold;
+            width: 180px;
+            flex-shrink: 0;
+        }
+        .colon {
+            width: 30px;
+        }
+        .content {
+            flex: 1;
+            min-width: 200px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 12px 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+        .media {
+            margin: 25px 0;
+            padding: 20px;
+            border: 2px dashed #555;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+        }
+        video, audio {
+            width: 100%;
+            max-width: 100%;
+        }
+        .placeholder {
+            color: #777;
+            font-size: 14px;
+            margin-top: 8px;
+        }
+
+        /* Responsif untuk HP */
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px 20px;
+            }
+            h1 {
+                font-size: 22px;
+            }
+            .row {
+                flex-direction: column;
+            }
+            .label {
+                width: 100%;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>TUGAS PEMROGRAMAN I</h1>
+
+        <div class="row">
+            <div class="label">NAMA</div>
+            <div class="colon">:</div>
+            <div class="content">Steinli Halomoan Hutagaol</div>
+        </div>
+
+        <div class="row">
+            <div class="label">NIM</div>
+            <div class="colon">:</div>
+            <div class="content">250820013</div>
+        </div>
+
+        <div style="margin: 35px 0 25px 0;">
+            <strong>DATA PENDIDIKAN :</strong>
+            <table>
+                <tr>
+                    <th width="120">TAHUN</th>
+                    <th>PENDIDIKAN</th>
+                    <th>ALAMAT</th>
+                </tr>
+                <tr>
+                    <td>2022/2023
+                    </td>
+                    <td>SD</td>
+                    <td>JL.DANAU SINGKARAK</td>
+                </tr>
+                <tr>
+                    <td>2021/2022</td>
+                    <td>SMP</td>
+                    <td>JL. AGENDA SMPN 19 MEDA
+                    </td>
+                </tr>
+                <tr>
+                    <td>2024/2025</td>
+                    <td>SMK</td>
+                    <td>GRIYA MARTUBUNG 1</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Hobi -->
+        <div class="row">
+            <div class="label">Hobby</div>
+            <div class="colon">:</div>
+            <div class="content">
+                NONTON FILM DONGHUA <br><br>
+                <div class="media">
+                    <img src="DONGHUA.jpeg" alt="Gambar Hobi">
+                </div>
+            </div>
+        </div>
+
+        <!-- Lagu -->
+        <div class="row">
+            <div class="label">Lagu kesukaan</div>
+            <div class="colon">:</div>
+            <div class="content">
+                DESPACITO<br><br>
+                <div class="media">
+                    <strong>Musik :</strong><br><br>
+                    <audio controls autoplay loop>
+                        <source src="ssstik.io_1782964198533.mp3" type="audio/mpeg">browser tidak mendukung pemutar audio.
+                    </audio>
+                    <p style="margin-top: 8px; font-size:14px; color:#555;">Lagu kesukaan: DESPACITO</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Film -->
+        <div class="row">
+            <div class="label">Film kesukaan</div>
+            <div class="colon">:</div>
+            <div class="content">
+                Battle Trought The Heavens <br><br>
+                <div class="media">
+                    <strong>Film :</strong><br><br>
+                    <video controls>
+                        <source src="Payudara.mp4" type="video/mp4">
+                        Browser tidak mendukung pemutar video.
+                    </video>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
